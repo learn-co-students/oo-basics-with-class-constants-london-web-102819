@@ -4,10 +4,8 @@ class Shoe
 
   BRANDS = [ ]
   def initialize(brand)
-    if BRANDS.any?(brand)
-      @brand = brand 
-    else
-      @brand = brand 
+    @brand=brand 
+    if BRANDS.any?(brand)==false 
      BRANDS << brand
     end
   end
